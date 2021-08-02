@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <title>Form Submission</title>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            .error-txt {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <form class="submitForm">
+            <div class="form-values">
+                <label for="fullName">First Name:</label>
+                <input type="text" name="fullName" id="fullName" placeholder="Enter Full Name" required>
+                <br><br>
+                <span class="error-txt" id="nameError"></span>
+                
+                <label for="mobileNo">Mobile Number:</label>
+                <input type="tel" name="mobileNo" id="mobileNumber" placeholder="Enter Mobile Number" required maxlength="10">
+                <br><br>
+                <span class="error-txt" id="mobNoError"></span>
+
+                <label for="emailId">Email Id:</label>
+                <input type="email" name="emailId" id="emailId" placeholder="Enter Email Id" required>
+                <br><br>
+                <span class="error-txt" id="emailError"></span>
+
+                <label for="fullName">Suggestion:</label>
+                <textarea placeholder="Enter your Suggestions here" id="suggestion" name="suggestions" cols="100" rows="5" required></textarea>
+                <br><br>
+
+                <button type="submit" id="submit" name="submitBtn">Submit</button>
+            </div>
+            
+        </form>
+        <script src="./script.js"></script>
+    </body>
+</html>
